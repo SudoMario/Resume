@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <title></title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style media="screen">
+                    html,body{
+                      width: 100%;
+                      height: 100%;
+                      background-image: url("k.jpg");
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                    }
+                    .right ul li {
+                      list-style-type: none;
+                      float: right;
+                      display: flex;
+                      margin-left: 30px;
+                    }
+                    .left ul li{
+                      list-style-type: none;
+                      float: left;
+                      font-size: 30px;
+                      color: white;
+                    }
+                    nav{
+                      margin-top: 50px;
+                    }
+
+                    .mid{
+                        margin-top: 150px;
+                    }
+
+                    @-webkit-keyframes typing { from { width: 0; } }
+                    @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+                    h1{
+                        font-family: 'Amatic SC', cursive !important;
+                         font-size: 400% !important;
+                        border-right: .1em solid red;
+                        width: 16.5em;
+                         width: 21ch;
+
+                        color: white;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        -webkit-animation: typing 2s steps(21, end),
+                            blink-caret .5s step-end infinite alternate;
+                    }
+
+                    p{
+                      font-family: 'Reenie Beanie', cursive;
+                      font-size: 300%;
+                      color: #117A65;
+                      text-align: center;
+                    }
+
+                    a:link{
+                      color: black;
+                      text-decoration: none;
+                    }
+
+                    button{
+
+                        background-color: transparent;
+                        border: 1px solid white !important;
+                        color: white;
+                        border-radius: 2px;
+                        outline: none;
+
+                    }
+
+                    button:hover{
+                        background-color: white;
+                        color: black;
+                        border-radius: 3px;
+                        outline: none;
+                    }
+
+                    .row{
+                        margin-bottom: 25px;
+                    }
+
+                    .modl{
+                      position: fixed; /* Sit on top of the page content */
+                    display: none; /* Hidden by default */
+                    width: 100%; /* Full width (cover the whole page) */
+                    height: 100%; /* Full height (cover the whole page) */
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: black; /* Black background with opacity */
+                    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+                    cursor: pointer;
+                    overflow-y: scroll;
+                    padding: 50px;
+                    overflow: auto !important;
+                    }
+
+    </style>
+    <script type="text/javascript">
+    function on() {
+      document.getElementById("overlay").style.display = "block";
+    }
+
+    function off() {
+      document.getElementById("overlay").style.display = "none";
+    }
+    </script>
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <nav>
+        <div class="col-md-3 left">
+            <ul>
+              <li>CS</li>
+            </ul>
+          </div>
+          <div class="col-md-5">
+
+          </div>
+            <div class="col-md-4 right">
+            <ul>
+              <li><a href="#"><button type="button" class="btn btn-lg" onclick="on()">Resume</button></a></li>
+              <li><a href="tel:+91 8073507705"><button type="button" class="btn btn-lg">Contact <i class="fa fa-phone" aria-hidden="true"></i></button></a></li>
+            </ul>
+            </div>
+          </nav>
+
+      </div>
+      <div class="mid">
+          <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
+              <h1>Hey, I'm Charan .</h1>
+            </div>
+            <div class="col-md-4">
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+
+              <p>I'm developer and programmer living in Bengaluru.I design and Build Web Applications.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+              <button type="button" name="button" class="btn btn-lg btn-block" onclick="on()">Resume</button>
+            </div>
+            <div class="col-md-2">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8 ">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=charan.shanbog@mail.com&su=Regarding-Job"><button type="button" name="button" class="btn btn-lg btn-block">Contact <i class="fa fa-envelope-o" aria-hidden="true"></i></button></a>
+            </div>
+            <div class="col-md-2">
+            </div>
+          </div>
+      </div>
+      <div class="modl" id="overlay" onclick="off()">
+        <div class="col-md-12">
+          <object data="CHARAN_RESUME.pdf" type="application/pdf" width="100%" height="900px">
+<iframe src="/pdf/sample-3pp.pdf#page=2" width="100%" height="100%" style="border: none;">
+This browser does not support PDFs. Please download the PDF to view it: <a href="/pdf/sample-3pp.pdf">Download PDF</a>
+</iframe>
+</object>
+
+                  </div>
+      </div>
+    </div>
+  </body>
+</html>
